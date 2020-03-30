@@ -1,0 +1,6 @@
+apiVersion: v2
+name: alertmanager
+description: The Alertmanager handles alerts sent by client applications such as the Prometheus server.
+type: application
+version: 0.1.0
+appVersion: 0.20.0
