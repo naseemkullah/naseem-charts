@@ -3,6 +3,17 @@ entries:
   alertmanager:
   - apiVersion: v2
     appVersion: 0.20.0
+    created: "2020-03-31T03:58:48.423282122Z"
+    description: The Alertmanager handles alerts sent by client applications such
+      as the Prometheus server.
+    digest: 6e34b61777d3ded8deac42f19259be37448d61a8b1b36aa0211b3b2ffb87643e
+    name: alertmanager
+    type: application
+    urls:
+    - https://github.com/naseemkullah/naseem-charts/releases/download/alertmanager-0.1.1/alertmanager-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.20.0
     created: "2020-03-30T20:16:20.631281958Z"
     description: The Alertmanager handles alerts sent by client applications such
       as the Prometheus server.
