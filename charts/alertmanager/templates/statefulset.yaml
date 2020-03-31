@@ -9,6 +9,7 @@ spec:
   selector:
     matchLabels:
       {{- include "alertmanager.selectorLabels" . | nindent 6 }}
+  serviceName: {{ include "alertmanager.fullname" . }}-headless
   template:
     metadata:
       labels:
@@ -19,7 +20,6 @@ spec:
         {{- toYaml . | nindent 8 }}
     {{- end }}
       serviceAccountName: {{ include "alertmanager.serviceAccountName" . }}
-      serviceName: {{ include "alertmanager.fullname" . }}-headless
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
